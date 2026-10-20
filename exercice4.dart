@@ -31,3 +31,27 @@ class Film extends Media {
     );
   }
 }
+
+void main() {
+  List<Media> catalogue = [];
+
+  catalogue.add(
+    Livre('Le Petit Prince', 'Antoine de Saint-Exupéry'),
+  );
+
+  catalogue.add(
+    Livre('Les Misérables', 'Victor Hugo'),
+  );
+
+  catalogue.add(
+    Film('Inception', 148),
+  );
+
+  catalogue.add(
+    Film('Titanic', 195),
+  );
+
+  for (var media in catalogue) {
+    media.afficherType();
+  }
+}
