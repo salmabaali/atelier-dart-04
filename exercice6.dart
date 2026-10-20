@@ -31,3 +31,4 @@ class BaseDeDonnees implements Connectable {
     print('BaseDeDonnees : Déconnexion réussie.');
   }
 }
+
