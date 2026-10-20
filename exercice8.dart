@@ -23,6 +23,20 @@ class Livre {
   }
 }
 
+class Roman extends Livre {
+  final String genre;
+
+  Roman(String titre, String auteur, this.genre)
+      : super(titre, auteur);
+
+  @override
+  void afficherInfos() {
+    print(
+      'Titre: $titre, Auteur: $auteur, Genre: $genre',
+    );
+  }
+}
+
 void main() {
   var livre1 = Livre(
     'The Little Prince',
@@ -35,7 +49,7 @@ void main() {
   );
 
   var livre3 = Livre(
-    'The Count of Monte Cristo',
+    'The count of Monte Cristo',
     'Alexandre Dumas',
   );
 
