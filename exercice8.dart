@@ -53,11 +53,26 @@ void main() {
     'Alexandre Dumas',
   );
 
+ var roman1 = Roman(
+    'The Hunchback of Notre-Dame',
+    'Victor Hugo',
+    'Historical novel',
+  );
+
+  var roman2 = Roman(
+    'The Red and the Black',
+    'Stendhal',
+    'Psychological novel',
+  );
+
   livre1.afficherInfos();
   livre2.afficherInfos();
   livre3.afficherInfos();
 
   print('Pages de ${livre1.titre} : ${livre1.pages}');
+
+  roman1.afficherInfos();
+  roman2.afficherInfos();
 
   Livre.afficherTotalLivres();
 }
